@@ -83,6 +83,7 @@ spec:
           team: ${{ steps['catalogFetch'].output.entity.metadata.name }}
           repoUrlRepo: ${{ steps['catalogFetch'].output.entity.metadata.name }}-${{ parameters.application_id }}
           repoUrlowner: siddarthbharadwaj02
+          gitRepoUrl: github.com
     - id: publish-gitopsreposetup
       name: Publish Template Gitops Repo
       action: publish:github
